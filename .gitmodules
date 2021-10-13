@@ -1,3 +1,7 @@
 [submodule "i96"]
-	path = i96
+	path = gpio_fix
 	url = https://wiki.pbeirne.com/patb/i96.git
+	
+[submodule "devmem2"]
+	path = devmem2
+	url = https://github.com/radii/devmem2.git devmem2
