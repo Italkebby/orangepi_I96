@@ -1,0 +1,31 @@
+creo servizio 
+
+cd /etc/systemd/system/
+
+nano yourservice.service
+
+[Unit]
+Description=runs only upon shutdown
+Conflicts=reboot.target
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+ExecStop=/bin/bash /usr/local/bin/yourservice
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+
+systemctl enable yourservice
+
+cd /usr/local/bin/
+nano yourservice
+
+#!/bin/bash
+./opio/opio write 125 off -d
+./opio/opio write 101 off -d
+./opio/opio write 126 off -d
+

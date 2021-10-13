@@ -1,0 +1,8 @@
+#!/bin/sh
+while true 
+do 
+sudo chmod o+rw /dev/ttyS0 
+echo "$(ifconfig | grep "inet ")" > /dev/ttyS0 
+sleep 10 
+done 
+

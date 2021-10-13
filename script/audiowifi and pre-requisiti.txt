@@ -1,0 +1,15 @@
+#!/bin/sh
+echo "STATUS: Configure wifi"
+nmtui
+
+echo "STATUS: Deleting alsa lib - audio driver"
+sudo find -name '*alsa*' -delete
+sudo rm -rf /usr/share/alsa
+sudo apt-get purge alsa-utils -y
+
+echo "STATUS: Installing pre-requirements"
+sudo apt update 
+sudo apt install aptitude -y
+
+
+

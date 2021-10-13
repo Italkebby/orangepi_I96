@@ -1,0 +1,6 @@
+- auto Startup GPIOfix
+
+
+
+minor
+- update gits rename folder with last pull

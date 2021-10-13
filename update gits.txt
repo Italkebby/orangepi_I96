@@ -1,0 +1,5 @@
+
+sudo rm -rf gpio_fix devmem2
+git clone http://wiki.pbeirne.com/patb/i96 gpio_fix
+git clone https://github.com/radii/devmem2.git
+

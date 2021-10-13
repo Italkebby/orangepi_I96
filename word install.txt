@@ -1,0 +1,21 @@
+#The i96 board has no audio I/O, so this package is really unnecessary.
+
+dd if=OrangePi_i96_ubuntu_xenial_server_linux3.10.62_v0.0.4.img of=/dev/sdo status=progress
+mount /dev/sd<n>2 <mount point>
+cd <mount point>
+
+PARTE FONDAMENTALE 
+sudo find -name '*alsa*' -delete
+sudo rm -rf usr/share/alsa
+sudo rm -rf usr/lib/arm-linux-gnueabihf/alsa-lib
+apt-get purge alsa-utils
+
+
+echo "deb [trusted=yes] https://download.eclipse.org/zenoh/zenoh/latest/ /" | sudo tee -a /etc/apt/sources.list > /dev/null
+echo "deb http://ftp.debian.org/debian stable main contrib non-free" | sudo tee -a /etc/apt/sources.list > /dev/null
+sudo apt update
+
+sudo apt install python3-pip git eclipse-zenoh i2c-tools python-smbus -y
+
+nmtui
+
