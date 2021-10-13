@@ -4,4 +4,4 @@
 	
 [submodule "devmem2"]
 	path = devmem2
-	url = https://github.com/radii/devmem2.git devmem2
+	url = https://github.com/radii/devmem2.git
