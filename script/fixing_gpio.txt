@@ -4,5 +4,8 @@ cd devmem2
 gcc devmem2.c -o devmem2
 cp devmem2 /usr/bin/
 cd 
+
 #fix autostart every startup
 bash gpio_fix/gpio_fixup.sh
+
+echo "Installed GPIO_FIX">>log.txt

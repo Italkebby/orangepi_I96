@@ -1,0 +1,7 @@
+da mettere prima del login per avviare 
+echo "./ipspam.sh" > /etc/
+
+da mettere dopo login per terminare lo spam dell'ip 
+echo "pkill -f ipspam" > /etc/profile
+
+nano 
