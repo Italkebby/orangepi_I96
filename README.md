@@ -19,7 +19,10 @@ https://github.com/Italkebby/orangepi_I96/blob/master/install.sh
 
 it will perform these stuff:
 
-- Remove all audio driver. that don't let reboot again the i96 because it want to load audio driver but it hasn't got any audio chip.
-- IP spam in serial port untill you'll login. After had copied some text by using right click you will encounter an error so I suggest you to use ssh IP and not serial port
+- Remove all audio driver
+  That don't let reboot again the i96 because it want to load audio driver but it hasn't got any audio chip.
+- IP spam in serial port untill you'll login
+  After had copied some text by using right click in serial COM command window you will encounter "ttyS0: 93 input overrun(s)",
+  so I suggest you to use ssh IP instehead of serial port, you'll can find its IP without login.
 - The power button will be used to shutdown the sistem
 - Fix GPIO by using this script (so many thanks) http://wiki.pbeirne.com/patb/i96
