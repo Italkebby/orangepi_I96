@@ -1,6 +1,0 @@
-- auto Startup GPIOfix
-- fix cd path
-
-
-minor
-- update gits rename folder with last pull

@@ -1,9 +1,10 @@
 #!/bin/sh
-
+sudo apt update
 echo "STATUS: Deleting alsa lib - audio driver"
 sudo find -name '*alsa*' -delete
 sudo rm -rf /usr/share/alsa
 sudo apt-get purge alsa-utils -y
+sudo apt autoremove
 
 echo "alsa removed">>log.txt
 
