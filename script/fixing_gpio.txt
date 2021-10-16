@@ -6,6 +6,8 @@ cp devmem2 /usr/bin/
 cd 
 
 #fix autostart every startup
-bash gpio_fix/gpio_fixup.sh
+
+echo "TODO: putting into startup"
+echo "/bin/bash gpio_fix/gpio_fixup.sh DA FIXARE" >> log.txt
 
 echo "Installed GPIO_FIX">>log.txt
