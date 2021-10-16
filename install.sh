@@ -15,7 +15,7 @@ echo "pkill -f $pwd/script/ipspam.txt" > /etc/profile
 clear
 echo "STATUS: Installing pre-requirements"
 sudo apt update 
-sudo apt install aptitude -y
+sudo apt install aptitude software-properties-common -y
 
 echo "aptitude installed">>log.txt
 
