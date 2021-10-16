@@ -1,5 +1,5 @@
 - auto Startup GPIOfix
-
+- fix cd path
 
 
 minor

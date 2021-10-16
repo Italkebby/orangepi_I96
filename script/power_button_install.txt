@@ -3,7 +3,6 @@ echo STATUS: Config shutdown button
 sudo aptitude install acpid -y
 cd /etc/acpi/
 touch shutdown.sh
-
 echo "event=button/power" | sudo tee -a shutdown.sh > /dev/null
 echo "action=/sbin/shutdown -h now" | sudo tee -a shutdown.sh > /dev/null
 sudo chmod +x shutdown.sh
@@ -11,3 +10,4 @@ cp shutdown.sh events/
 cd events
 mv shutdown.sh button_power
 sudo /etc/init.d/acpid restart
+echo "shutdown button ready">>log.txt
