@@ -8,3 +8,10 @@ I include a version from those repos
 INSTALL 
 
 nmtui for connect to internet
+
+git this repo to download all script
+
+git clone https://github.com/Italkebby/orangepi_I96
+
+launch the file install.sh
+https://github.com/Italkebby/orangepi_I96/blob/master/install.sh
