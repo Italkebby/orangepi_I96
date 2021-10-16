@@ -1,6 +1,8 @@
 #!/bin/sh
 echo STATUS: Config shutdown button
 
+sudo aptitude install acpid -y
+
 cd /etc/acpi/
 touch shutdown.sh
 echo "event=button/power" | sudo tee -a shutdown.sh > /dev/null
