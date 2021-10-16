@@ -1,0 +1,1 @@
+nmtui for connect to internet
